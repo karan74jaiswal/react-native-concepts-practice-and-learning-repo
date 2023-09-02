@@ -1,0 +1,7 @@
+{
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-chrome": "dev",
+    "pwa-node": "node"
+  },
+  "liveServer.settings.CustomBrowser": "chrome"
+}
