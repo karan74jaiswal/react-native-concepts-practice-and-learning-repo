@@ -1,9 +1,9 @@
 // 1. Importing Libraries needed to Create a Component.
 import React from "react"; // React Library Takes care of how component s will be made and how they will work with each other
-import { Text, StyleSheet, View } from "react-native"; // react-native library will take care of taking data from the components and render it on the moile screen
+import { Text, StyleSheet, View, Button } from "react-native"; // react-native library will take care of taking data from the components and render it on the moile screen
 
 // 2. Creating a Component/Function
-const ComponentsScreen = () => {
+const ComponentsScreen = ({ navigation: { navigate } }) => {
   const yourName = "Karan";
   const realName = "Kartikey";
   // const yourName = <Text>Karan</Text>;
@@ -15,6 +15,13 @@ const ComponentsScreen = () => {
       <Text style={styles.secondTextStyle}>
         My name is {Math.random() > 0.5 ? yourName : realName}
       </Text>
+      <Button
+        title="Go To List Screen"
+        onPress={() => {
+          console.log("Simple Button Pressed");
+          navigate("List");
+        }}
+      ></Button>
     </View>
   );
 };

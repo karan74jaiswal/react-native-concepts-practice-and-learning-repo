@@ -21,6 +21,7 @@ const ListScreen = () => {
     { friend: "Friend 5", age: 27 },
     { friend: "Friend 6", age: 53 },
     { friend: "Friend 7", age: 32 },
+    { friend: "Friend 8", age: 32 },
   ];
   return (
     <View>
