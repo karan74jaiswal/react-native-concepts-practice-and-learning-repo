@@ -35,6 +35,63 @@ const HomeScreen = ({ navigation: { navigate } }) => {
       >
         <Text>Go to New Screen</Text>
       </TouchableOpacity>
+      <Button
+        title="Go To Image Screen"
+        onPress={() => {
+          console.log("Simple Button Pressed");
+          navigate("PracticeScreen2");
+        }}
+      ></Button>
+      <Button
+        title="Go To Counter Screen"
+        onPress={() => {
+          console.log("Simple Button Pressed");
+          navigate("Counter");
+        }}
+      ></Button>
+      <Button
+        title="Go To Colour Screen"
+        onPress={() => {
+          console.log("Simple Button Pressed");
+          navigate("ColourGenerator");
+        }}
+      ></Button>
+      <Button
+        title="Go To Colour Adjustor"
+        onPress={() => {
+          console.log("Simple Button Pressed");
+          navigate("ColorAdjust");
+        }}
+      ></Button>
+      <Button
+        title="Go To Square Screen"
+        onPress={() => {
+          console.log("Simple Button Pressed");
+          navigate("Square");
+        }}
+      ></Button>
+      <Button
+        title="Go To Name Screen"
+        onPress={() => {
+          console.log("Simple Button Pressed");
+          navigate("Name");
+        }}
+      ></Button>
+      <Button
+        title="Go To Password Test Screen"
+        onPress={() => {
+          console.log("Simple Button Pressed");
+          navigate("PasswordScreen");
+        }}
+      ></Button>
+
+      <Button
+        title="Go To Box Screen"
+        onPress={() => {
+          console.log("Simple Button Pressed");
+          navigate("Box");
+        }}
+      ></Button>
     </View>
   );
 };
